@@ -1,6 +1,6 @@
 require 'sinatra'
-require 'pg'
 require 'haml'
+require 'pg'
 
 get '/' do
   "Hello, world"
