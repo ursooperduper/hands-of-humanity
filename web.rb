@@ -6,6 +6,7 @@ require 'sequel'
 DB = Sequel.connect(ENV["DATABASE_URL"])
 
 class Card < Sequel::Model(:cards)
+  # Cleans us my formatting shortcuts
   def cleanUp
     cardtext.gsub!(/\[\]/, '_______________')
     cardtext.gsub!(/\[b\]/, '<br/>')
