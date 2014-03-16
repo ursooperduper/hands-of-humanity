@@ -3,8 +3,12 @@ GEM
   specs:
     haml (4.0.5)
       tilt
+    pg (0.17.1)
     rack (1.5.2)
     sequel (4.8.0)
+    sequel_pg (1.6.9)
+      pg (>= 0.8.0)
+      sequel (>= 3.39.0)
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
@@ -15,5 +19,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  pg
   sequel
+  sequel_pg
   sinatra (= 1.1.0)
