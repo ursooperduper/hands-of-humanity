@@ -3,7 +3,7 @@ require 'haml'
 require 'pg'
 require 'sequel'
 
-DB = Sequel.postgres('cards')
+DB = Sequel.connect(ENV["DATABASE_URL"])
 
 class Card < Sequel::Model(:cards)
   def cleanUp
