@@ -35,10 +35,10 @@ get '/' do
 
   @b_card = Card[b_card_list[0]].cleanUp
 
-  @wh_playcards = []
+  @w_playcards = []
   i = 0
   while i < @b_card.pick
-    @wh_playcards.push(w_card_list[i])
+    @w_playcards.push(Card[w_card_list[i]].cleanUp)
     i += 1
   end
 
