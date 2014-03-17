@@ -68,7 +68,7 @@ input {
 
   h1 {
   	font: {
-      size: 2em;
+      size: 1em;
       weight: bold;
     }
   }
@@ -168,8 +168,11 @@ input {
 
   h1 {
     font: {
-      size: 3em;
+      size: 2.3em;
       weight: bold;
+    }
+    margin: {
+      bottom: -20px;
     }
   }
 
